@@ -32,9 +32,8 @@
 		<meta name="theme-color" content="#372549">
 		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
-		<!--<link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>-->
-		<link href='https://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Cousine' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Marck+Script:300,400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Cousine:300,400,700' rel='stylesheet' type='text/css'>
 		<link href="css/ac.css" rel="stylesheet">
 		<link href="css/app.css" rel="stylesheet">
 	</head>
@@ -45,7 +44,7 @@
 				position: fixed;
 				height: 80px;
 				background: rgba(26, 20, 35, .7);
-				z-index: 10000;
+				z-index: 1000;
 				padding-bottom: 0;
 				padding-top: 0;
 				width: 100%;
@@ -53,19 +52,26 @@
 		</style>
 		<div id="login" class="landing">
 			<section class="container-fluid navig" style="">
-			<div style="float:left;">
-					<img alt="Gluu IO beta"
-							 style="width: 80px;height: 80px;position: absolute; top: -20px;left: 50px;z-index: 10;"
-							 src="http://gluu.acimg.eu/images/beta.png">
+				<div class="container" style="position: relative;">
+					<div style="float:left;">
+						<img alt="Gluu IO beta"
+								 style="width: 80px;height: 80px;position: absolute; top: -20px;left: 50px;z-index: 10;"
+								 src="http://gluu.acimg.eu/images/beta.png">
 
-					<div class="hidden" itemscope itemtype="http://schema.org/Organization">
-						 <a itemprop="url" href="http://gluu.io">Home</a>
-						 <img itemprop="logo" src="http://gluu.acimg.eu/images/logo.png" />
+						<div class="hidden" itemscope itemtype="http://schema.org/Organization">
+							 <a itemprop="url" href="http://gluu.io">Home</a>
+							 <img itemprop="logo" src="http://gluu.acimg.eu/images/logo.png" />
+						</div>
+						<img class="gluu-logo"
+								 alt="Gluu IO logo"
+								 style="width: 50px;height: 50px;border-radius: 10px;margin: 15px;"
+								 src="http://gluu.acimg.eu/images/logo.png">
 					</div>
-					<img class="gluu-logo"
-							 alt="Gluu IO logo"
-							 style="width: 50px;height: 50px;border-radius: 10px;margin: 15px;"
-							 src="http://gluu.acimg.eu/images/logo.png">
+
+					<div class="pull-right m16">
+						<button class="btn btn-lg btn-default" data-toggle="modal" data-target="#login-modal" style="margin-right: 5px;">Log in</button>
+						<button class="btn btn-lg btn-warning" data-toggle="modal" data-target="#getInvited" style="color: #333;">Get invitation!</button>
+					</div>
 				</div>
 
 			</section>
@@ -76,8 +82,8 @@
 				<!--<h1>Integrations that simply work</h1>-->
 				<!--<h1>Use the power of APIs</h1>-->
 				<h1 style="font-weight: 300;font-size: 60px;">Connect apps with APIs</h1><br>
-				<h3 style="font-weight: 300; font-size: 22px;width:700px;text-align: center;margin: auto;">Whatever your apps functionality, there's much more available to you. Do what programmers do, but without coding!</h3><br>
-				
+				<h3 style="font-weight: 300; font-size: 22px;max-width:700px;text-align: center;margin: auto;">Whatever your apps' functionality, there's much more available to you. Do what programmers do, but without coding!</h3><br>
+
 				<!--<h1>to... <span style="color: #fff;font-family: 'Cousine', monospace;">speed up your lead generation process</span></h1>-->
 				<br>
 				<br>
@@ -98,8 +104,8 @@
 				}</style>
 
 				<div class="row" style="position: relative;">
-					<div class="col-sm-2" style="width: 15%;"></div>
-					<div class="col-sm-4 text-center">
+					<div class="col-md-2" style="width: 15%;"></div>
+					<div class="col-md-4 text-center">
 						<img class="app-icon"
 									 alt="Google Sheets logo"
 									 src="http://gluu.io/img/gs.png">
@@ -130,7 +136,7 @@
 									 src="http://gluu.io/img/dropbox.png">
 					</div>
 
-					<div class="col-sm-2 APIs text-center">
+					<div class="col-md-2 APIs text-center">
 						<img class="app-icon"
 									 alt="FullContact logo"
 									 src="http://gluu.io/img/fullcontact-stacked-solid-white.png">
@@ -144,41 +150,18 @@
 									 src="http://gluu.io/img/cloudsight.jpg">
 
 					</div>
-					<div class="col-sm-2">
+					<div class="col-md-2">
 						<img class="gluu-logo"
 								 alt="Gluu IO logo"
-								 style="margin-left: 20px;margin-top: 85px;width: 100px;height: 100px;border-radius: 20px;"
+								 style="margin-left: 10px;margin-top: 85px;width: 100px;height: 100px;border-radius: 20px;"
 								 src="http://gluu.acimg.eu/images/logo.png">
 					</div>
 					<i class="fa fa-exchange" style="position: absolute; left: 45%;top:100px;font-size: 60px;"></i>
-					<div cl2ass="fa fa-bolt" style="font-family: sans-serif;font-weight: 100; position: absolute; left: 61%;top:-20px;font-size: 200px;">}</div>
+					<div cl2ass="fa fa-bolt" style="font-weight: 100; position: absolute; left: 62%;top:-30px;font-size: 200px;">}</div>
 				</div>
-				<br><br>
+				<!--<br><br>-->
 
 				<!--<h2>No coding, no hacking. It just works!</h2>-->
-				<form name="subscribe"
-							class="center-block"
-							style="width:450px;"
-							action="http://gluu.us11.list-manage.com/subscribe/post?u=ec09316880be909a0a589827f&id=ecb481789f"
-							method="post"
-							role="form">
-					<br><br>
-					<div class="input-group">
-						<input name="MERGE0"
-									 id="MERGE0"
-									 class="form-control input-lg"
-									 style="border-radius:20px 0 0 20px;"
-									 type="email"
-									 placeholder="Your email address here">
-						<span class="input-group-btn">
-							<button class="btn btn-lg btn-success next"
-											style="border-radius:0 20px 20px 0;"
-											type="submit"
-											onclick="_cio.track(cio_prefix+' entered-email');_cio.track('entered-email-top-button');">Get early access!</button>
-						</span>
-					</div><br>
-					<!--<p>We'll get back to you when we launch.</p>-->
-				</form>
 
 				<a href="#content">
 					<i class="fa fa-angle-double-down" style="color: rgba(255,255,255,0.5);position: absolute; bottom: 60px;font-size: 40px;margin-left: -20px;"></i>
@@ -294,7 +277,7 @@
 							 style="background: #eacdc2; color: #333; padding-top: 5%; padding-bottom: 5%;">
 				<br><br>
 				<h3>Want to try it out before anyone else?</h3>
-				<p>Just leave your email address and we'll get back to you ASAP!</p>
+				<!--<p>Just leave your email address and we'll get back to you ASAP!</p>-->
 				<br>
 				<form name="subscribe"
 							style="width:450px;"
@@ -351,6 +334,92 @@
 					</a>
 				</div>
 			</section>
+		</div>
+		<style>
+			.modal-backdrop{
+				/*z-index: 10000;*/
+			}
+			.modal-backdrop.in{
+				opacity: 0.75;
+			}
+
+		</style>
+
+		<div class="modal fade" id="getInvited" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document" style="margin-top: 20%;background-color: transparent;">
+				<div class="modal-content" style="background-color: transparent;">
+					<div class="modal-body">
+						<h1 style="color: #fff;text-align: center;">Get invitation to early access</h1>
+						<br><br>
+						<form name="subscribe"
+									class="center-block"
+									style="width:450px;"
+									action="http://gluu.us11.list-manage.com/subscribe/post?u=ec09316880be909a0a589827f&id=ecb481789f"
+									method="post"
+									role="form">
+
+							<div class="input-group">
+								<input name="MERGE0"
+											 id="MERGE0"
+											 class="form-control input-lg"
+											 style="border-radius:20px 0 0 20px;font-weight: 400;"
+											 type="email"
+											 placeholder="Your email address here">
+								<span class="input-group-btn">
+									<button class="btn btn-lg btn-warning next"
+													style="border-radius:0 20px 20px 0;color: #000;font-weight: 300;"
+													type="submit"
+													onclick="_cio.track(cio_prefix+' entered-email');_cio.track('entered-email-top-button');">Get early access!</button>
+								</span>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document" style="margin-top: 15%;background-color: transparent;">
+				<div class="modal-content" style="color: #fff;background-color: transparent;">
+					<div class="modal-body">
+						<h1 style="text-align: center;">Log in</h1>
+						<br><br>
+						<form name="subscribe"
+									class="center-block"
+									style="width:100%;"
+									action="http://gluu.us11.list-manage.com/subscribe/post?u=ec09316880be909a0a589827f&id=ecb481789f"
+									method="post"
+									role="form">
+
+							<div class="input-group" style="width: 100%;">
+								<input class="form-control input-lg"
+											 style="border-radius:20px;font-weight: 400;width: 100%;text-align: center;"
+											 type="email"
+											 placeholder="Your email address here">
+								<br>
+								<br>
+								<br>
+								<input class="form-control input-lg"
+											 style="border-radius:20px;font-weight: 400;width: 100%;text-align: center;"
+											 type="password"
+											 placeholder="Your password">
+								<br>
+								<br>
+								<br>
+								<!--<span class="input-group-btn">-->
+									<button class="btn btn-lg btn-warning next"
+													style="border-radius:20px;color: #000;font-weight: 300;width: 100%;""
+													type="submit"
+													onclick="_cio.track(cio_prefix+' entered-email');_cio.track('entered-email-top-button');">Log in!</button>
+								<br>
+								<br>
+									<h4>* You need an invitation to log in.</h4>
+								<!--</span>-->
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

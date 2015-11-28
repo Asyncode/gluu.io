@@ -11,6 +11,7 @@ body {
 	height: 100%; /* added for ease of styling*/
 	background-color:#372549;
 	color:#ddd;
+	font-weight: 300;
 }
 h1,h2,h3{
 	letter-spacing: 1px;
