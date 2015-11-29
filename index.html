@@ -230,7 +230,7 @@
 					<br><br><br><br>
 					<br><br><br><br>
 
-					<h1 style="font-family: 'Cousine', monospace; color: #fff;">Set up three simple steps:</h1>
+					<h1 style="font-family: 'Cousine', monospace; color: #fff;">Set up three simple steps</h1>
 
 					<div class="smpl-step" style="margin-left: 0px;border-bottom: 0; min-width: 500px;">
 
@@ -364,12 +364,13 @@
 											 class="form-control input-lg"
 											 style="border-radius:20px 0 0 20px;font-weight: 400;"
 											 type="email"
-											 placeholder="Your email address here">
+											 placeholder="Email address here">
 								<span class="input-group-btn">
 									<button class="btn btn-lg btn-warning next"
 													style="border-radius:0 20px 20px 0;color: #000;font-weight: 300;"
 													type="submit"
-													onclick="_cio.track(cio_prefix+' entered-email');_cio.track('entered-email-top-button');">Get early access!</button>
+													onsubmit="ga('send', 'event', { eventCategory: 'sign-up', eventAction: 'early access', eventLabel: 'top'});"
+													onclick="_cio.track(cio_prefix+' entered-email');_cio.track('entered-email-top-button');">Get my invitation!</button>
 								</span>
 							</div>
 						</form>
