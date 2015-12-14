@@ -9,7 +9,7 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@gluu_io">
 		<meta name="twitter:creator" content="@gluu_io">
-		<meta name="twitter:title" content="Connect your favorite apps with powerful APIs">
+		<meta name="twitter:title" content="Get APIs do heavy lifting for you">
 		<meta name="twitter:description" content="Learn more about your customers, measure brand sentiment, recognize objects in images. 3 simple steps, no coding.">
 		<meta name="twitter:image" content="http://gluu.acimg.eu/images/logo.png">
 		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -50,6 +50,7 @@
 				width: 100%;
 			}
 		</style>
+
 		<div id="login" class="landing">
 			<section class="container-fluid navig" style="">
 				<div class="container" style="position: relative;">
@@ -59,9 +60,14 @@
 								 src="http://gluu.acimg.eu/images/beta.png">
 
 						<div class="hidden" itemscope itemtype="http://schema.org/Organization">
-							 <a itemprop="url" href="http://gluu.io">Home</a>
-							 <img itemprop="logo" src="http://gluu.acimg.eu/images/logo.png" />
+							<img itemprop="logo" src="http://gluu.acimg.eu/images/logo.png" />
+							<a itemprop="url" href="http://gluu.io/"><div itemprop="name"><strong>Gluu IO</strong></div></a>
+							<div itemprop="description">Connect your apps with APIs</div>
+							<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+								<span itemprop="addressCountry">Ireland</span><br>
+							</div>
 						</div>
+
 						<img class="gluu-logo"
 								 alt="Gluu IO logo"
 								 style="width: 50px;height: 50px;border-radius: 10px;margin: 15px;"
@@ -77,19 +83,15 @@
 			</section>
 
 			<section class="container-fluid text-center" style="padding-top: 10%;padding-bottom: 15%;position: relative;color: white;">
-<!--<br><br>-->
-
-				<!--<h1>Integrations that simply work</h1>-->
-				<!--<h1>Use the power of APIs</h1>-->
 				<h1 style="font-weight: 300;font-size: 60px;">Connect apps with APIs</h1><br>
-				<h3 style="font-weight: 300; font-size: 22px;max-width:700px;text-align: center;margin: auto;">Whatever your apps' functionality, there's much more available to you. Do what programmers do, but without coding!</h3><br>
+				<h3 style="font-weight: 300; font-size: 23px;max-width:700px;text-align: center;margin: auto;">Get APIs to do the heavy lifting for you. Make your life and work easier in three simple steps. No coding required!</h3>
+				<br>
+				<br>
+				<br>
+				<br>
 
-				<!--<h1>to... <span style="color: #fff;font-family: 'Cousine', monospace;">speed up your lead generation process</span></h1>-->
-				<br>
-				<br>
-				<br>
-
-				<style>.app-icon{
+				<style>
+				.app-icon{
 					display: inline-block;
 					width: 60px;
 					height: 60px;
@@ -101,11 +103,80 @@
 				.APIs .app-icon{
 					width: 75px;
 					height: 75px;
-				}</style>
+				}
+				.gluu-logo{
+					margin-left: 10px;
+					margin-top: 85px;
+					width: 100px;
+					height: 100px;
+					border-radius: 20px;
+				}
+				.fst-col{
+					width: 15%;
+				}
+				.snd-col{
+					padding-top: 20px;
+				}
+				.infographic .fa-exchange{
+					position: absolute;
+					left: 45%;
+					top:100px;
+					font-size: 60px;
+				}
+				.infographic .mustash{
+					font-weight: 100;
+					position: absolute;
+					left: 62%;
+					top:-30px;
+					font-size: 200px;
+				}
+				@media (max-width: 1120px){
+					.infographic{
+						margin-bottom: 70px;
+					}
+					.app-icon{
+						display: inline-block;
+						width: 45px;
+						height: 45px;
+					}
+					.APIs .app-icon{
+						width: 50px;
+						height: 50px;
+					}
+					.gluu-logo{
+						margin-left: 10px;
+						margin-top: 65px;
+						width: 70px;
+						height: 70px;
+						border-radius: 10px;
+						margin-left: 50px;
+					}
+					.fst-col{
+						width: 0;
+					}
+					.snd-col{
+						width: 40%;
+						padding-top: 10px;
+						margin-right: 5%;
+					}
+					.infographic .fa-exchange{
+						left: 43%;
+						top:70px;
+						font-size: 40px;
+					}
+					.infographic .mustash{
+						font-weight: 100;
+						position: absolute;
+						left: 67%;
+						top:15px;
+						font-size: 100px;
+					}
+				}
+				</style>
 
-				<div class="row" style="position: relative;">
-					<div class="col-md-2" style="width: 15%;"></div>
-					<div class="col-md-4 text-center">
+				<div class="row infographic" style="position: relative;">
+					<div class="col-xs-2 fst-col"></div>
+					<div class="col-xs-4 snd-col text-center apps">
 						<img class="app-icon"
 									 alt="Google Sheets logo"
 									 src="http://gluu.io/img/gs.png">
@@ -121,7 +192,7 @@
 
 						<img class="app-icon"
 									 alt="Twitter logo"
-									 style="height: 100px;width: 100px;"
+									 style="hei2ght: 120%;w2idth: 120%;"
 									 src="http://gluu.io/img/twitter.png">
 
 						<img class="app-icon"
@@ -136,7 +207,7 @@
 									 src="http://gluu.io/img/dropbox.png">
 					</div>
 
-					<div class="col-md-2 APIs text-center">
+					<div class="col-xs-2 APIs text-center">
 						<img class="app-icon"
 									 alt="FullContact logo"
 									 src="http://gluu.io/img/fullcontact-stacked-solid-white.png">
@@ -150,14 +221,13 @@
 									 src="http://gluu.io/img/cloudsight.jpg">
 
 					</div>
-					<div class="col-md-2">
+					<div class="col-xs-2">
 						<img class="gluu-logo"
 								 alt="Gluu IO logo"
-								 style="margin-left: 10px;margin-top: 85px;width: 100px;height: 100px;border-radius: 20px;"
 								 src="http://gluu.acimg.eu/images/logo.png">
 					</div>
-					<i class="fa fa-exchange" style="position: absolute; left: 45%;top:100px;font-size: 60px;"></i>
-					<div cl2ass="fa fa-bolt" style="font-weight: 100; position: absolute; left: 62%;top:-30px;font-size: 200px;">}</div>
+					<i class="fa fa-exchange"></i>
+					<div class="mustash" >}</div>
 				</div>
 				<!--<br><br>-->
 
@@ -166,7 +236,6 @@
 				<a href="#content">
 					<i class="fa fa-angle-double-down" style="color: rgba(255,255,255,0.5);position: absolute; bottom: 60px;font-size: 40px;margin-left: -20px;"></i>
 				</a>
-
 			</section>
 
 			<section class="container-fluid text-center"
