@@ -1,0 +1,395 @@
+@import "fullPage";
+@import "brand";
+@import "http://fonts.googleapis.com/css?family=Open+Sans:300,400,700";
+
+body {
+	padding-bottom: 40px;
+	font-size:13px;
+	background-color: $brand-bkg;
+//	background-color: #372549;
+	color: #ddd;
+	font-family: "Open Sans",sans-serif;
+	font-weight: 300;
+	height: 100%;
+	padding-bottom: 90px;
+}
+h1, h2, h3 {
+    letter-spacing: 1px;
+}
+
+.navbar {
+    background: rgba(26, 20, 35, 0.3) none repeat scroll 0 0;
+    border-color: rgba(26, 20, 35, 0.6);
+    height: 85px;
+}
+.navbar .main-menu {
+    margin: 10px;
+}
+.gluu-logo {
+    height: 60px;
+    opacity: 0.9;
+    width: 60px;
+}
+
+.link-icon {
+    color: #333;
+    text-decoration: none;
+}
+.link-icon:hover {
+    text-decoration: none;
+}
+.modal {
+    color: #1a1423;
+}
+#urls .badge {
+    margin-right: 15px;
+}
+#urls .link-delete {
+    background-color: #b94a48;
+}
+#urls .link-user {
+    background-color: #3a87ad;
+}
+.userName {
+    color: #357ebd;
+}
+.inverse kbd {
+    background-color: #f9f2f4;
+    color: #c7254e;
+}
+.fa.active {
+    color: #fff;
+}
+.hint {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    bottom: 10px;
+    left: 30px;
+    padding: 20px;
+    position: fixed;
+    right: 30px;
+}
+.hint i {
+    padding: 0 12px 0 5px;
+}
+.main-menu {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+.main-menu .bars {
+    color: inherit;
+}
+.main-menu .dropdown-menu {
+    margin-left: -50px;
+}
+.gluu {
+    border-top: 2px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 10px;
+    padding: 20px;
+    position: relative;
+}
+.gluu .smpl-step {
+    padding: 0 0 10px;
+}
+.gluu .smpl-step > .smpl-step-step {
+    padding: 0;
+    position: relative;
+}
+.gluu .smpl-step > .smpl-step-step .smpl-step-num {
+    font-size: 17px;
+    margin-left: 47px;
+    margin-top: -20px;
+}
+.gluu .smpl-step > .smpl-step-step .smpl-step-info {
+    font-size: 14px;
+    padding-top: 27px;
+}
+.gluu .smpl-step > .smpl-step-step > .smpl-step-icon {
+    background: #fff none repeat scroll 0 0;
+    border: 4px solid #eacdc2;
+    border-radius: 50%;
+    display: block;
+    font-size: 70px;
+    height: 120px;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -35px;
+    padding-top: 10px;
+    position: absolute;
+    top: 45px;
+    width: 120px;
+}
+.gluu .smpl-step > .smpl-step-step > .progress {
+    border-radius: 0;
+    box-shadow: none;
+    height: 4px;
+    margin-bottom: 40px;
+    margin-top: 72px;
+    position: relative;
+}
+.gluu .smpl-step > .smpl-step-step > .progress > .progress-bar {
+    background: #eacdc2 none repeat scroll 0 0;
+    box-shadow: none;
+    width: 0;
+    z-index: -10;
+}
+.gluu .smpl-step > .smpl-step-step.complete > .progress > .progress-bar {
+    width: 100%;
+}
+.gluu .smpl-step > .smpl-step-step.active > .progress > .progress-bar {
+    width: 50%;
+}
+.gluu .smpl-step > .smpl-step-step.active:first-child > .progress > .progress-bar {
+    width: 0;
+}
+.gluu .smpl-step > .smpl-step-step.active:last-child > .progress > .progress-bar {
+    width: 100%;
+}
+.gluu .smpl-step > .smpl-step-step > .smpl-step-icon {
+    color: #1a1423;
+}
+.gluu .smpl-step > .smpl-step-step:first-child > .progress {
+    left: 50%;
+    width: 50%;
+}
+.gluu .smpl-step > .smpl-step-step:last-child > .progress {
+    width: 50%;
+    z-index: -10;
+}
+.gluu .smpl-step > .smpl-step-step .smpl-step-info {
+    color: #fff;
+    font-size: 14px;
+    margin-top: -10px;
+    text-align: center;
+}
+.gluu .smpl-step > .smpl-step-step a:hover {
+    cursor: default;
+    text-decoration: none;
+}
+.gluu .step {
+    float: left;
+    opacity: 0.9;
+}
+.gluu .step .icon {
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    height: 100px;
+    transition: background-color 0.5s ease 0s;
+    width: 100px;
+}
+.gluu .step .desc {
+    font-size: 14px;
+    margin-top: 10px;
+    max-width: 100px;
+    text-align: center;
+}
+.gluu .step .wrapper {
+    display: inline-block;
+    float: left;
+}
+.gluu .smpl-step i {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 45px;
+    margin: 0 0 0 15px;
+}
+.gluu .step:last-child i {
+    display: none;
+}
+.gluu .smpl-step > .smpl-step-step > .smpl-step-icon.fullContact {
+    background-image: url("/images/logos/fullcontact-stacked-solid-red.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80% auto;
+    text-align: center;
+}
+.gluu .smpl-step > .smpl-step-step > .smpl-step-icon.google-spreadsheets {
+    background-image: url("https://lh3.ggpht.com/e3oZddUHSC6EcnxC80rl_6HbY94sM63dn6KrEXJ-C4GIUN-t1XM0uYA_WUwyhbIHmVMH=w100");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 60% auto;
+    text-align: center;
+}
+.gluu .smpl-step > .smpl-step-step > .smpl-step-icon.mailchimp {
+    background-image: url("https://static.mailchimp.com/web/brand-assets/logo-dark.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80% auto;
+    text-align: center;
+}
+.gluu .smpl-step .twStream {
+    color: #29a7df !important;
+}
+.gluu .smpl-step .twStream .icon {
+    color: #29a7df !important;
+    font-family: FontAwesome;
+    font-size: 70px;
+    padding: 0;
+    text-align: center;
+    width: 200px;
+}
+.gluu .smpl-step .twStream .icon::before {
+    content: "";
+}
+.gluu .smpl-step.icon.twStream:hover::before {
+    content: "Twitter";
+    font-size: 16px;
+    position: relative;
+    top: -20px;
+}
+.gluu .step .icon.mongodb {
+    background-color: #eee;
+    background-image: url("http://www.unixstickers.com/image/data/stickers/mongo/mongo.sh.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80% auto;
+    color: #eee;
+    font-size: 30px;
+    text-align: center;
+}
+.gluu .step .icon.mongodb:hover::after {
+    content: "MongoDB";
+    font-size: 16px;
+    position: relative;
+    top: 20px;
+}
+.gluu .step .icon:hover {
+    background: rgba(255, 255, 255, 0.4) none repeat scroll 0 0;
+    transition: background-color 0.5s ease 0s;
+}
+.gluu .run {
+    border-radius: 40px;
+    display: inline-block;
+    position: absolute;
+    right: 45px;
+    top: 60px;
+    width: 105px;
+}
+.gluu .remove {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+//section {
+//    padding-bottom: 10%;
+//    padding-top: 10%;
+//}
+.connect h1, .connect h5 {
+    color: #fff;
+    width: 85%;
+}
+.row.row-connect {
+    width: 85%;
+}
+h2.text-center {
+    padding-bottom: 18px;
+}
+.col-wth-steps {
+    padding-top: 10px;
+}
+.btn-add-gluu {
+    background: #d83a3a none repeat scroll 0 0;
+    color: #fff;
+}
+.landing .smpl-step {
+    border-bottom: 1px solid #e0e0e0;
+    margin-left: 50px;
+    margin-top: 100px;
+    padding: 0 0 10px 12.5%;
+}
+.landing .smpl-step > .smpl-step-step {
+    padding: 0;
+    position: relative;
+}
+.landing .smpl-step > .smpl-step-step .smpl-step-num {
+    font-size: 17px;
+    margin-left: 47px;
+    margin-top: -20px;
+}
+.landing .smpl-step > .smpl-step-step .smpl-step-info {
+    font-size: 14px;
+    padding-top: 27px;
+}
+.landing .smpl-step > .smpl-step-step > .smpl-step-icon {
+    background: #eacdc2 none repeat scroll 0 0;
+    border-radius: 50%;
+    display: block;
+    font-size: 70px;
+    height: 120px;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -35px;
+    padding-top: 10px;
+    position: absolute;
+    top: 45px;
+    width: 120px;
+}
+.landing .smpl-step > .smpl-step-step > .progress {
+    border-radius: 0;
+    box-shadow: none;
+    height: 8px;
+    margin-bottom: 40px;
+    margin-top: 70px;
+    position: relative;
+}
+.landing .smpl-step > .smpl-step-step > .progress > .progress-bar {
+    background: #eacdc2 none repeat scroll 0 0;
+    box-shadow: none;
+    width: 0;
+}
+.landing .smpl-step > .smpl-step-step.complete > .progress > .progress-bar {
+    width: 100%;
+}
+.landing .smpl-step > .smpl-step-step.active > .progress > .progress-bar {
+    width: 50%;
+}
+.landing .smpl-step > .smpl-step-step.active:first-child > .progress > .progress-bar {
+    width: 0;
+}
+.landing .smpl-step > .smpl-step-step.active:last-child > .progress > .progress-bar {
+    width: 100%;
+}
+.landing .smpl-step > .smpl-step-step.disabled > .smpl-step-icon {
+    background-color: #f5f5f5;
+}
+.landing .smpl-step > .smpl-step-step > .smpl-step-icon {
+    color: #1a1423;
+}
+.landing .smpl-step > .smpl-step-step.disabled > .smpl-step-icon::after {
+    opacity: 0;
+}
+.landing .smpl-step > .smpl-step-step:first-child > .progress {
+    left: 50%;
+    width: 50%;
+}
+.landing .smpl-step > .smpl-step-step:last-child > .progress {
+    width: 50%;
+}
+.landing .smpl-step > .smpl-step-step.disabled a.smpl-step-icon {
+    pointer-events: none;
+}
+.landing .smpl-step > .smpl-step-step .smpl-step-info {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+.landing .smpl-step > .smpl-step-step a:hover {
+    cursor: default;
+    text-decoration: none;
+}
+.typed-cursor {
+    animation: 0.7s ease 0s normal none infinite running blink;
+    opacity: 1;
+}
+@keyframes blink {
+	0% {
+			opacity: 1;
+	}
+	50% {
+			opacity: 0;
+	}
+	100% {
+			opacity: 1;
+	}
+}

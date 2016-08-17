@@ -51,8 +51,7 @@
 			}
 		</style>
 
-		<div id="login" class="landing">
-			<section class="container-fluid navig" style="">
+		<section class="container-fluid navig" style="">
 				<div class="container" style="position: relative;">
 					<div style="float:left;">
 						<img alt="Gluu IO beta"
@@ -82,18 +81,14 @@
 
 			</section>
 
-			<section class="container-fluid text-center" style="padding-top: 10%;padding-bottom: 15%;position: relative;color: white;">
-<!--
-				<h4>Inteasdadrested in hosadw APIs can help you? Want access Facebook, Google, Twitter data? Maybe want do sentiment analysis but don't know where to start?</h4>
-				<h4>We can help!</h4>
--->
-<!--				<br><br><br>
-				<a href="https://ela22.typeform.com/to/adr7Mx" class="btn btn-lg btn-danger">Get Free API Consultation!<br><small style="font-size: 12px;">(time limited offer)</small></a><br><br>-->
+
+		<div id="login" class="landing">
+			<section class="section text-center" style="position: relative;color: white; background:#372549;">
 
 				<h1 style="font-weight: 300;font-size: 60px;">Connect your app with powerful APIs</h1><br>
-				<!--<h3 style="font-weight: 300; font-size: 23px;max-width:700px;text-align: center;margin: auto;">Get APIs to do the heavy lifting for you. Make your life and work easier in three simple steps. No coding required!</h3>-->
+
 				<h3 style="font-weight: 300; font-size: 23px;max-width:700px;text-align: center;margin: auto;">
-					
+
 				</h3>
 				<br>
 				<br>
@@ -105,10 +100,8 @@
 					display: inline-block;
 					width: 60px;
 					height: 60px;
-					/*padding: 20px;*/
 					border-radius: 5px;
 					margin: 0 10px;
-					/*background: #ddd;*/
 				}
 				.APIs .app-icon{
 					width: 75px;
@@ -116,7 +109,7 @@
 				}
 				.gluu-logo{
 					margin-left: 10px;
-					/*margin-top: 85px;*/
+					margin-top: 90px;
 					width: 100px;
 					height: 100px;
 					border-radius: 20px;
@@ -239,18 +232,15 @@
 					<i class="fa fa-exchange"></i>
 					<div class="mustash" >}</div>
 				</div>
-				<!--<br><br>-->
 
-				<!--<h2>No coding, no hacking. It just works!</h2>-->
-
-				<a href="#content">
+				<a href="#content" onclick="$.fn.fullpage.moveSectionDown();">
 					<i class="fa fa-angle-double-down" style="color: rgba(255,255,255,0.5);position: absolute; bottom: 60px;font-size: 40px;margin-left: -20px;"></i>
 				</a>
+
 			</section>
 
-			<a id="content"></a>
-			<section class="container-fluid text-center"
-							 style="background: #fff; color: #333; padding-top: 100px; padding-bottom: 150px;">
+			<section class="section text-center"
+							 style="background: #fff; color: #333;">
 				<div class="container">
 					<h2 class="pull-left" style="font-size: 60px; font-family: 'Marck Script',cursive;">Why</h2>
 					<br><br><br><br>
@@ -262,7 +252,7 @@
 						<p>Eliminate manual data entry</p>
 						<p>Boost your research</p>
 						<p>Make daunting tasks a breeze</p>
-						<!--<p>Speed up your lead generation process</p>-->
+						<p>Speed up your lead generation process</p>
 					</div>
 					<br><br><br><br>
 					<a href="http://blog.gluu.io"
@@ -275,36 +265,11 @@
 				</div>
 			</section>
 
-			<section class="container-fluid"
-							 style="display: none; background: #eacdc2; color: #333; padding-top: 15%; padding-bottom: 15%;">
-				<div class="container">
-
-					<!--<h2 class="text-center"></h2>-->
-					<!--<h2 class="text-center">Cool things users do with Gluu IO</h2>-->
-					<div class="ro2w center-block">
-						<div class="col-md-1"></div>
-						<div class="col-md-3 col-wth-steps r10 pv8 m16" style="background: #b75d69; color: #fff;">
-							<h4>Get more info about MailChimp subscribers</h4>
-							<p>Leverage FullContact API to get to know your subscribers - age, location, gender and social profiles. Save results in your favourite CRM system.</p>
-						</div>
-						<!--<div class="col-xs-1"></div>-->
-						<div class="col-md-3 col-wth-steps r10 pv8 m16" style="background: rgba(255,255,255,0.5);">
-							<h4>Find out how your customers feel about your brand</h4>
-							<p>Run sentiment analysis on tweets mentioning your brand. Analyze results further with Google Sheets or export them as CSV file.</p>
-						</div>
-						<!--<div class="col-xs-1"></div>-->
-						<div class="col-md-3 col-wth-steps r10 pv8 m16" style="background: #b75d69; color: #fff;">
-							<h4>Convert PDF documents into text</h4>
-							<p>Connect Google Drive with Abbyy Cloud OCR to extract text, tables and images from scanned paper documents. Easily extract relevant data. </p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section class="container-fluid text-center"
-							 style="background: #774c60; padding-top: 10%; padding-bottom: 15%;">
+			<section class="section text-center"
+							 style="background: #774c60;">
 
 			 <div class="container">
+
 					<h2 class="pull-left" style="font-size: 60px; font-family: 'Marck Script',cursive;">How</h2>
 					<br><br><br><br>
 					<br><br><br><br>
@@ -324,7 +289,7 @@
 
 						<div class="col-xs-3 smpl-step-step complete">
 							<div class="progress">
-								<!--<i class="fa fa-arrow-right" style="color: black;"></i>-->
+								<i class="fa fa-arrow-right" style="color: black;"></i>
 								<div class="progress-bar"></div>
 							</div>
 							<a class="smpl-step-icon"><i class="fa fa-cogs" style="padding-top: 7px;"></i>
@@ -345,18 +310,17 @@
 					<br><br><br><br>
 					<br><br><br><br>
 					<h1 style="font-family: 'Cousine', monospace; color: #fff;">Just hit <div class="btn btn-success btn-lg r10" style="cursor: default;" onclick="_cio.track(cio_prefix+'-hit run-button');">run</div> and wait for results!</h1>
+
 			</section>
 
-			<section class="container-fluid text-center"
-							 style="background: #fff; color: #333; padding-top: 50px; padding-bottom: 50px;">
+			<section class="section text-center"
+							 style="background: #fff; color: #333;">
 				<h2>Endless combinations without a single line of code</h2>
 			</section>
 
-			<section class="container-fluid text-center"
-							 style="background: #eacdc2; color: #333; padding-top: 5%; padding-bottom: 5%;">
-				<br><br>
+			<section class="section text-center"
+							 style="background: #eacdc2; color: #333;">
 				<h3>Want to try it out before anyone else?</h3>
-				<!--<p>Just leave your email address and we'll get back to you ASAP!</p>-->
 				<br>
 				<form name="subscribe"
 							style="width:450px;"
@@ -378,30 +342,20 @@
 											onclick="_cio.track(cio_prefix+' entered-email');_cio.track('entered-email-bottom-button');">Get early access!</button>
 						</span>
 					</div>
-					<br>
-					<!--<p>Leave your email and we'll get back to you when we launch.</p>-->
 				</form>
-				<br><br>
 			</section>
 
-	<section class="container-fluid text-center"
-					 style="background: #372549; color: #333; padding-top: 100px; padding-bottom: 50px;">
+			<section class="section text-center"
+							 style="background: #372549; color: #333;">
 
-		<div class="text-center">
-			<div style="position: relative;">
-<!--						<img alt="Gluu IO beta"
-						 style="width: 100px;height: 100px;position: absolute; top: -40px;left: 50%;margin-l3eft: -50px;z-index: 10;"
-						 src="http://gluu.acimg.eu/images/beta.png">-->
+				<div class="text-center">
+					<div style="position: relative;">
 
 					<img class="gluu-logo"
 							 alt="Gluu IO logo"
 							 style="width: 100px;height: 100px;border-radius: 20px;"
 							 src="http://gluu.acimg.eu/images/logo.png">
 					</div>
-					<!--<img class="img-circle gluu-logo"-->
-					<!--	 alt="Gluu IO logo"-->
-					<!--	 style="width: 100px;height: 100px;"-->
-					<!--	 src="//gluu.acimg.eu/images/logo.png">-->
 						<br><br><br>
 					<a href="//twitter.com/gluu_io" class="unstyled-link" target="_blank" onclick="_cio.track(cio_prefix+' clicked-twitter-button');">
 						<i class="fa fa-twitter" style="font-size: 500%;padding:15px;color: #fff;opacity:0.8;"></i>
@@ -415,7 +369,7 @@
 				</div>
 			</section>
 		</div>
-
+		
 		<style>
 			.modal-backdrop{
 				/*z-index: 10000;*/
@@ -520,13 +474,20 @@
 				</div>
 			</div>
 		</div>
-
+		
 		<script src="http://code.jquery.com/jquery.min.js"></script>
 		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<!--<script src="//acf.acimg.eu/js/op.min.js"></script>-->
 		<!--<script src="/js/app.js"></script>-->
 		<script src="js/typed.min.js"></script>
-
+		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#login').fullpage({
+					css3: true
+				});
+			});
+		</script>
 		<script>
 			if (window.location.hash==="#thankyou") {
 				$("#modal").modal()
